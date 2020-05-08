@@ -39,8 +39,21 @@
 			justify-content: center
 	.agent
 		padding: 58px 30px 75px 30px
+	.work__title
+		font-size: 19px
 	.price
-		padding: 53px 30px 56px 30px
+		.container
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&__columns
+			flex-wrap: wrap
+			width: 878px
+			justify-content: center
+		&__column
+			&:nth-child(n+3)
+				margin-top: 20px
 	.consultation
 		&__fone
 			width: 971px
@@ -60,4 +73,76 @@
 			margin-right: 20px
 	.main-footer
 		padding: 24px 40px 39px 40px
+
+@media( max-width: 991px)
+	.main_btn
+		width: 170px
+		height: 51px
+		font-size: 14px
+
+	.main-header
+		&__list
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			background-color: rgba(0, 0, 0, .8)
+			position: fixed
+			width: 50%
+			height: 100%
+			top: 0
+			left: -100%
+		&__item
+			&::after
+				content: ''
+				border: none
+			a
+				font-size: 20px
+		&__burger
+			display: block
+		&__flex
+			padding-left: 30px
+			justify-content: end
+	.promo
+		&__title
+			margin-top: 25px
+			font-size: 22px
+		h1
+			font-size: 48px
+		h2 
+			font-size: 30px
+		&__line
+			width: 300px
+	.advantages
+		&__img
+			flex: 0 0 70px
+		&__title
+			font-size: 20px
+		&__text
+			font-size: 18px
+		.advantage
+			flex: 0 1 490px
+			&:nth-child(2n-1)
+				margin-right: 0
+			&:last-child
+				margin-top: 25px
+	.work
+		&__title
+			font-size: 20px
+	.consultation
+		&__img
+			width: 75px
+			padding: 0px 9px 11px 10px
+		&__fone
+			left: 0.5%
+			top: 78px
+			width: 760px
+		&__text
+			input
+				flex: 0 1 230px
+		&__btn
+			width: 130px
+			font-size: 11px
+
+				
+				
 		
