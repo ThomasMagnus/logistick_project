@@ -1,27 +1,6 @@
-$(document).ready(function(){
-	$('.recall__flex').slick({
-		centerMode: true,
-		centerPadding: '60px',
-		slidesToShow: 3,
-		responsive: [
-		  {
-			breakpoint: 768,
-			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '40px',
-			  slidesToShow: 3
-			}
-		  },
-		  {
-			breakpoint: 480,
-			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '40px',
-			  slidesToShow: 1
-			}
-		  }
-		]
-	});
-});
+const mainHeaderBurger = document.querySelector('.main-header__burger'),
+	burger = document.querySelector('burger');
+
+mainHeaderBurger.addEventListener('click', () => {
+	burger.classList.toggle('active');
+})

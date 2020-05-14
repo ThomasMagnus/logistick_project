@@ -21,6 +21,18 @@ button
 	background-color: $main-color
 	margin: 20px auto
 
+.active
+    &:first-child
+        transform: rotate(45deg)
+    &:nth-child(2)
+        display: none
+    &:last-child
+        transform: rotate(-45deg)
+        margin-top: -2px   
+
+.active_left
+    left: 0
+
     
 
 @import "fonts"

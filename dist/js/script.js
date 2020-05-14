@@ -1,27 +1,11 @@
-$(document).ready(function(){
-	$('.recall__flex').slick({
-		centerMode: true,
-		centerPadding: '60px',
-		slidesToShow: 3,
-		responsive: [
-		  {
-			breakpoint: 768,
-			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '40px',
-			  slidesToShow: 3
-			}
-		  },
-		  {
-			breakpoint: 480,
-			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '40px',
-			  slidesToShow: 1
-			}
-		  }
-		]
+const mainHeaderBurger = document.querySelector('.main-header__burger'),
+	burger = document.querySelectorAll('.burger'),
+	mainHeaderList = document.querySelector('.main-header__list');
+
+mainHeaderBurger.addEventListener('click', () => {
+	burger.forEach(item => {
+		item.classList.toggle('active');
 	});
-});
+	mainHeaderList.classList.toggle('main-header__list-left');
+	mainHeaderList.classList.toggle('active_left');
+})
